@@ -352,6 +352,4 @@ func main() {
 	if val, ok := cpu.vars["result"]; ok {
 		fmt.Printf("\nФінальний результат обчислень (змінна result): %f\n", val)
 	}
-
-	fmt.Println("\nПрограму успішно завершено!")
 }
