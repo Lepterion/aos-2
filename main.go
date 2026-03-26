@@ -156,7 +156,7 @@ func (c *Coprocessor) PrintState(instruction string) {
 			i++
 		}
 	}
-	fmt.Print("\n[Натисни Enter для продовження]")
+	fmt.Print("\n[Натисніть Enter для продовження]")
 	bufio.NewReader(os.Stdin).ReadBytes('\n')
 }
 
