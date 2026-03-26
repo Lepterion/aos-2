@@ -160,9 +160,7 @@ func (c *Coprocessor) PrintState(instruction string) {
 	bufio.NewReader(os.Stdin).ReadBytes('\n')
 }
 
-// Інструкції для інтерпретації
-
-// --- ВНУТРІШНІ ОПЕРАЦІЇ СТЕКУ ---
+// Стекові операції
 
 func (c *Coprocessor) PUSH(val float64) {
 	if c.count >= 8 {
@@ -183,7 +181,7 @@ func (c *Coprocessor) POP() float64 {
 	return Float42ToFloat64(val)
 }
 
-// --- ІНСТРУКЦІЇ СОПРОЦЕСОРА ---
+// Інструкції для інтерпретації
 
 // LOADC - завантажує числову константу
 func (c *Coprocessor) LOADC(val float64) {
